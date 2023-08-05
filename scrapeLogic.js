@@ -3,7 +3,7 @@ require("dotenv").config();
 
 const scrapeLogic = async (req, res) => {
   try {
-    const { assignment_topic, course_title, course_code, student_name, student_id, student_year, student_semester, student_session, student_department, teacher_name, teacher_position, teacher_department, teacher_university, submission_date } = req;
+    const { assignment_topic, course_title, course_code, student_name, student_id, student_year, student_semester, student_session, student_department, teacher_name, teacher_position, teacher_department, teacher_university, submission_date } = req.body;
     const imageUrl = `${process.env.DOMAIN}/images/logo/bsmrstu.jpg`;
 
 
